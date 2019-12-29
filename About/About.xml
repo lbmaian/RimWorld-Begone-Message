@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+  <name>Begone, Message!</name>
+  <author>lbmaian</author>
+  <url>https://github.com/lbmaian/RimWorld-Begone-Message</url>
+  <supportedVersions>
+    <li>1.0</li>
+  </supportedVersions>
+  <description><![CDATA[<b>Begone, Message!</b>
+
+You know those messages on food rotting and relations decaying and so forth that annoyingly block the some of colonist bar at the top?
+
+This mod allows you to:
+* Dismiss a message by right-clicking that message.
+* Dismiss all messages by shift-right-clicking any message.
+]]>
+  </description>
+</ModMetaData>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Manifest>
+    <identifier>Begone-Message</identifier>
+    <version>1.0</version>
+    <dependencies/>
+    <manifestUri>https://raw.githubusercontent.com/lbmaian/RimWorld-Begone-Message/master/About/Manifest.xml</manifestUri>
+    <downloadUri>https://github.com/lbmaian/RimWorld-Begone-Message</downloadUri>
+</Manifest>

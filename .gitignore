@@ -1,0 +1,6 @@
+Source/**/bin
+Source/**/obj
+Source/**/packages
+.vs
+.vscode
+*.csproj.user
