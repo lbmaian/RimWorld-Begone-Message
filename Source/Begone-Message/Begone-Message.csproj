@@ -10,7 +10,7 @@
     <Authors>lbmaian</Authors>
     <Copyright>Copyright © 2019</Copyright>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
-    <RootNamespace>Begone_Message</RootNamespace>
+    <RootNamespace>BegoneMessage</RootNamespace>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugType>full</DebugType>

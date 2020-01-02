@@ -10,9 +10,11 @@
 
 You know those messages on food rotting and relations decaying and so forth that annoyingly block some of the colonist bar at the top?
 
-This mod allows you to:
+This mod allows you to (by default):
 * Dismiss a message by right-clicking that message.
 * Dismiss all messages by shift-right-clicking any message.
+
+Whether (shift)-right-clicking a message dismisses only that message or dismisses all messages can be customized in the mod options.
 ]]>
   </description>
 </ModMetaData>

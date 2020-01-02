@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+
+  <!-- <![CDATA[...]]> is necessary to preserve the rich text formatting tags like <b>. -->
+  <BegoneMessage_Name>Begone, Message!</BegoneMessage_Name>
+  <BegoneMessage_rightClick><![CDATA[<b>Right-clicking</b> a message:]]></BegoneMessage_rightClick>
+  <BegoneMessage_shiftRightClick><![CDATA[<b>Shift-right-clicking</b> a message:]]></BegoneMessage_shiftRightClick>
+  <BegoneMessage_dismissSingleMessage>dismisses only that message</BegoneMessage_dismissSingleMessage>
+  <BegoneMessage_dismissAllMessages>dismisses all messages</BegoneMessage_dismissAllMessages>
+
+</LanguageData>

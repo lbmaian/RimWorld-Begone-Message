@@ -5,7 +5,7 @@ using Harmony;
 using UnityEngine;
 using Verse;
 
-namespace Begone_Message
+namespace BegoneMessage
 {
 	[StaticConstructorOnStartup]
 	static class HarmonyPatches
@@ -36,7 +36,7 @@ namespace Begone_Message
 
 		// Targets the ImmediateWindow lambda in Message.Draw.
 		[HarmonyTargetMethod]
-		static MethodBase Calculatemethod(HarmonyInstance harmony) => typeof_Message_Draw_ImmediateWindowLambda.GetMethod("<>m__0", AccessTools.all);
+		static MethodBase Calculatemethod(HarmonyInstance _) => typeof_Message_Draw_ImmediateWindowLambda.GetMethod("<>m__0", AccessTools.all);
 
 		// This must be done in a prefix, because the Widgets.ButtonInvisible within the lambda will use up mouse events.
 		// Additionally, it allows us to have that lambda return immediately after handling right-click.
@@ -48,17 +48,29 @@ namespace Begone_Message
 			{
 				if (currentEvent.shift)
 				{
-					liveMessages.Clear();
+					RemoveMessage(__instance, BegoneMessageMod.Settings.shiftRightClickDismissAll);
 				}
 				else
 				{
-					var msg = (Message)fieldof_Message_Draw_ImmediateWindowLambda_this.GetValue(__instance);
-					liveMessages.Remove(msg);
+					RemoveMessage(__instance, BegoneMessageMod.Settings.rightClickDismissAll);
 				}
 				currentEvent.Use();
 				return false;
 			}
 			return true;
+		}
+
+		static void RemoveMessage(object instance, bool dismissAll)
+		{
+			if (dismissAll)
+			{
+				liveMessages.Clear();
+			}
+			else
+			{
+				var msg = (Message)fieldof_Message_Draw_ImmediateWindowLambda_this.GetValue(instance);
+				liveMessages.Remove(msg);
+			}
 		}
 	}
 }
