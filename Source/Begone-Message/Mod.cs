@@ -35,10 +35,10 @@ namespace BegoneMessage
 			listingStandard.Begin(inRect);
 			// All calls to Translate must be done after the game is initialized, so this can't be put into a static or instance initializer.
 			var dismissOptions = new Dictionary<string, bool>()
-					   {
-							   { "BegoneMessage_dismissSingleMessage".Translate(), false },
-							   { "BegoneMessage_dismissAllMessages".Translate(), true },
-					   };
+			{
+				{ "BegoneMessage_dismissSingleMessage".Translate(), false },
+				{ "BegoneMessage_dismissAllMessages".Translate(), true },
+			};
 			listingStandard.LeftAlignedLabeledRadioButtonList("BegoneMessage_rightClick".Translate(), dismissOptions,
 					ref Settings.rightClickDismissAll);
 			listingStandard.LeftAlignedLabeledRadioButtonList("BegoneMessage_shiftRightClick".Translate(), dismissOptions,
