@@ -1,10 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ModMetaData>
+  <packageId>lbmaian.begonemessage</packageId>
   <name>Begone, Message!</name>
   <author>lbmaian</author>
   <url>https://github.com/lbmaian/RimWorld-Begone-Message</url>
   <supportedVersions>
     <li>1.0</li>
+    <li>1.1</li>
   </supportedVersions>
   <description><![CDATA[<b>Begone, Message!</b>
 
