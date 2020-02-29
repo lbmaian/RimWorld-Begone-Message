@@ -1,5 +1,4 @@
-﻿using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 using Verse;
 
 namespace BegoneMessage
@@ -28,23 +27,22 @@ namespace BegoneMessage
 
 		public override void DoSettingsWindowContents(Rect inRect)
 		{
-			var listingStandard = new Listing_Standard
+			var listing = new ListingExtended
 			{
-				verticalSpacing = 12f
+				verticalSpacing = 12f,
 			};
-			listingStandard.Begin(inRect);
+			listing.Begin(inRect);
 			// All calls to Translate must be done after the game is initialized, so this can't be put into a static or instance initializer.
-			var dismissOptions = new Dictionary<string, bool>()
+			var dismissOptions = new RadioButtonOption<bool>[]
 			{
-				{ "BegoneMessage_dismissSingleMessage".Translate(), false },
-				{ "BegoneMessage_dismissAllMessages".Translate(), true },
+				RadioButtonOption.New("BegoneMessage_dismissSingleMessage".Translate(), false),
+				RadioButtonOption.New("BegoneMessage_dismissAllMessages".Translate(), true),
 			};
-			listingStandard.LeftAlignedLabeledRadioButtonList("BegoneMessage_rightClick".Translate(), dismissOptions,
-					ref Settings.rightClickDismissAll);
-			listingStandard.LeftAlignedLabeledRadioButtonList("BegoneMessage_shiftRightClick".Translate(), dismissOptions,
-					ref Settings.shiftRightClickDismissAll);
-			listingStandard.End();
-			base.DoSettingsWindowContents(inRect);
+			listing.Label("BegoneMessage_rightClick".Translate());
+			listing.LeftAlignedLabeledRadioButtonList(ref Settings.rightClickDismissAll, dismissOptions);
+			listing.Label("BegoneMessage_shiftRightClick".Translate());
+			listing.LeftAlignedLabeledRadioButtonList(ref Settings.shiftRightClickDismissAll, dismissOptions);
+			listing.End();
 		}
 
 		public override string SettingsCategory() => "BegoneMessage_Name".Translate();
