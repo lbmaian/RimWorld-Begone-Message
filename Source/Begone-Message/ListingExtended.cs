@@ -1,5 +1,5 @@
 ﻿using System;
-using Harmony;
+using HarmonyLib;
 using RimWorld;
 using UnityEngine;
 using Verse;
@@ -55,8 +55,8 @@ namespace BegoneMessage
 		public bool LeftAlignedLabeledRadioButton(string labelText, bool chosen,
 			string tooltipText = null)
 		{
-			// Annoyingly, Widgets.RadioButton has a mouseover sound effect that Widgets.RadioButtonLabeled lacks,
-			// and Widgets.RadioButtonLabeled right-aligns the radio buttons, so we can't use either method.
+			// Annoyingly, Widgets.RadioButton/RadioButtonLabeled has an unwanted mouseover sound effect,
+			// and Widgets.RadioButtonLabeled also right-aligns the radio buttons, so we can't use either method.
 			var rect = GetRect(Text.LineHeight);
 			if (!tooltipText.NullOrEmpty())
 			{
@@ -70,7 +70,7 @@ namespace BegoneMessage
 			var selected = Widgets.ButtonInvisible(rect);
 			if (selected && !chosen)
 			{
-				SoundDefOf.RadioButtonClicked.PlayOneShotOnCamera();
+				SoundDefOf.Tick_Tiny.PlayOneShotOnCamera();
 			}
 			Gap(verticalSpacing);
 			return selected;
