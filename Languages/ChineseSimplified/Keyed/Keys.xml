@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+
+  <!-- <![CDATA[...]]> is necessary to preserve the rich text formatting tags like <b>. -->
+  <BegoneMessage_Name>滚啊！消息通知</BegoneMessage_Name>
+  <BegoneMessage_rightClick><![CDATA[<b>右键</b>消息通知:]]></BegoneMessage_rightClick>
+  <BegoneMessage_shiftRightClick><![CDATA[<b>按住Shift右键</b>消息通知:]]></BegoneMessage_shiftRightClick>
+  <BegoneMessage_dismissSingleMessage>仅消除选中的通知</BegoneMessage_dismissSingleMessage>
+  <BegoneMessage_dismissAllMessages>消除所有通知</BegoneMessage_dismissAllMessages>
+
+</LanguageData>
