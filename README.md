@@ -14,6 +14,7 @@ Should be compatible with other mods.
 
 ## Credits
 * lbmaian - author
+* HawnHan - simplified Chinese translation
 * pardeike - [Harmony library] that's used for patching at runtime
 * Ludeon - [RimWorld]
 
