@@ -1,7 +1,7 @@
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <Configurations>RW1.1;RW1.2</Configurations>
-    <Configuration Condition=" '$(Configuration)' == '' ">RW1.2</Configuration>
+    <Configurations>RW1.1;RW1.2;RW1.3</Configurations>
+    <Configuration Condition=" '$(Configuration)' == '' ">RW1.3</Configuration>
     <AssemblyName>Begone-Message</AssemblyName>
     <Authors>lbmaian</Authors>
     <Copyright>Copyright © 2019</Copyright>
@@ -34,6 +34,14 @@
       </PropertyGroup>
       <ItemGroup>
         <PackageReference Include="Krafs.Rimworld.Ref" Version="1.2.*" />
+      </ItemGroup>
+    </When>
+    <When Condition=" '$(Configuration)' == 'RW1.3' ">
+      <PropertyGroup>
+        <OutputPath>..\..\1.3\Assemblies\</OutputPath>
+      </PropertyGroup>
+      <ItemGroup>
+        <PackageReference Include="Krafs.Rimworld.Ref" Version="1.3.*" />
       </ItemGroup>
     </When>
   </Choose>
