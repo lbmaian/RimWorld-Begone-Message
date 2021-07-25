@@ -7,14 +7,14 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Begone-Message", "Begone-Me
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
-		Debug|Any CPU = Debug|Any CPU
-		Release|Any CPU = Release|Any CPU
+		RW1.1|Any CPU = RW1.1|Any CPU
+		RW1.2|Any CPU = RW1.2|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{D7E817E6-BB02-4E44-A633-9E8D2C052C9E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{D7E817E6-BB02-4E44-A633-9E8D2C052C9E}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{D7E817E6-BB02-4E44-A633-9E8D2C052C9E}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{D7E817E6-BB02-4E44-A633-9E8D2C052C9E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D7E817E6-BB02-4E44-A633-9E8D2C052C9E}.RW1.1|Any CPU.ActiveCfg = RW1.1|Any CPU
+		{D7E817E6-BB02-4E44-A633-9E8D2C052C9E}.RW1.1|Any CPU.Build.0 = RW1.1|Any CPU
+		{D7E817E6-BB02-4E44-A633-9E8D2C052C9E}.RW1.2|Any CPU.ActiveCfg = RW1.2|Any CPU
+		{D7E817E6-BB02-4E44-A633-9E8D2C052C9E}.RW1.2|Any CPU.Build.0 = RW1.2|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -10,15 +10,15 @@ namespace BegoneMessage
 
 		public override void ExposeData()
 		{
+			base.ExposeData();
 			Scribe_Values.Look(ref rightClickDismissAll, nameof(rightClickDismissAll), false);
 			Scribe_Values.Look(ref shiftRightClickDismissAll, nameof(shiftRightClickDismissAll), true);
-			base.ExposeData();
 		}
 	}
 
 	public class BegoneMessageMod : Mod
 	{
-		public static BegoneMessageModSettings Settings;
+		public static BegoneMessageModSettings Settings { get; private set; }
 
 		public BegoneMessageMod(ModContentPack content) : base(content)
 		{
