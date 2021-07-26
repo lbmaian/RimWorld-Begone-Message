@@ -46,7 +46,7 @@
     </When>
   </Choose>
   <ItemGroup>
-    <PackageReference Include="Lib.Harmony" Version="2.1.0" ExcludeAssets="runtime" />
+    <PackageReference Include="Lib.Harmony" Version="2.1.*" ExcludeAssets="runtime" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="..\..\**\*" Exclude="..\..\.git\**\*;..\..\Source\**\*" LinkBase="!ModFolder" />
