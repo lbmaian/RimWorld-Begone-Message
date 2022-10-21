@@ -23,7 +23,7 @@ namespace BegoneMessage
 			// A lambda on RimWorld 1.0 on Unity 5.6.5f1 (mono .NET Framework 3.5 equivalent) is compiled into
 			// a CompilerGenerated-attributed non-public inner type with name prefix "<{parentMethodName}>"
 			// including an instance method with name prefix "<>".
-			// A lambda on RimWorld 1.1 on Unity 2019.2.17f1 (mono .NET Framework 4.7.2 equivalent) is compiled into
+			// A lambda on RimWorld 1.1+ on Unity 2019.2.17f1 (mono .NET Framework 4.7.2 equivalent) is compiled into
 			// a CompilerGenerated-attributed non-public inner type with name prefix "<>"
 			// including an instance method with name prefix "<{parentMethodName}>".
 			// Recent-ish versions of Visual Studio also compile this way.

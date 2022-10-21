@@ -1,23 +1,26 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.29609.76
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32929.385
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Begone-Message", "Begone-Message\Begone-Message.csproj", "{D7E817E6-BB02-4E44-A633-9E8D2C052C9E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
-		RW1.1|Any CPU = RW1.1|Any CPU
 		RW1.2|Any CPU = RW1.2|Any CPU
 		RW1.3|Any CPU = RW1.3|Any CPU
+		RW1.4|Any CPU = RW1.4|Any CPU
+		RW1.4Unstable|Any CPU = RW1.4Unstable|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{D7E817E6-BB02-4E44-A633-9E8D2C052C9E}.RW1.1|Any CPU.ActiveCfg = RW1.1|Any CPU
-		{D7E817E6-BB02-4E44-A633-9E8D2C052C9E}.RW1.1|Any CPU.Build.0 = RW1.1|Any CPU
 		{D7E817E6-BB02-4E44-A633-9E8D2C052C9E}.RW1.2|Any CPU.ActiveCfg = RW1.2|Any CPU
 		{D7E817E6-BB02-4E44-A633-9E8D2C052C9E}.RW1.2|Any CPU.Build.0 = RW1.2|Any CPU
 		{D7E817E6-BB02-4E44-A633-9E8D2C052C9E}.RW1.3|Any CPU.ActiveCfg = RW1.3|Any CPU
 		{D7E817E6-BB02-4E44-A633-9E8D2C052C9E}.RW1.3|Any CPU.Build.0 = RW1.3|Any CPU
+		{D7E817E6-BB02-4E44-A633-9E8D2C052C9E}.RW1.4|Any CPU.ActiveCfg = RW1.4|Any CPU
+		{D7E817E6-BB02-4E44-A633-9E8D2C052C9E}.RW1.4|Any CPU.Build.0 = RW1.4|Any CPU
+		{D7E817E6-BB02-4E44-A633-9E8D2C052C9E}.RW1.4Unstable|Any CPU.ActiveCfg = RW1.4Unstable|Any CPU
+		{D7E817E6-BB02-4E44-A633-9E8D2C052C9E}.RW1.4Unstable|Any CPU.Build.0 = RW1.4Unstable|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
