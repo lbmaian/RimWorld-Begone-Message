@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- <![CDATA[...]]> is necessary to preserve the rich text formatting tags like <b>. -->
+  <BegoneMessage_Name>Убирайся, сообщение!</BegoneMessage_Name>
+  <BegoneMessage_rightClick><![CDATA[<b>Нажатие ПКМ</b> на сообщение:]]></BegoneMessage_rightClick>
+  <BegoneMessage_shiftRightClick><![CDATA[<b>Нажатие Shift+ПКМ</b> на сообщение:]]></BegoneMessage_shiftRightClick>
+  <BegoneMessage_dismissSingleMessage>убирает только само сообщение</BegoneMessage_dismissSingleMessage>
+  <BegoneMessage_dismissAllMessages>убирает все сообщения</BegoneMessage_dismissAllMessages>
+
+</LanguageData>
